@@ -1,0 +1,378 @@
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footerContent h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footerContent p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 30px;
+  font-size: 15px;
+  color: #cacdd2;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 1.5px;
+  text-transform: capitalize;
+}
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+.footer-menu {
+  float: right;
+}
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover {
+  color: #27bcda;
+}
+
+.form {
+  display: grid;
+  grid-row-gap: 5px;
+  background-color: rgb(101, 153, 238);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  padding: 25px;
+}
+
+@media (min-width: 400px) {
+  .form {
+    grid-column-gap: 25px;
+    grid-template-areas: "label-name label-email" "field-name field-email" "label-msg  ." "field-msg  field-msg" "button     .";
+  }
+}
+.label-name {
+  grid-area: label-name;
+  color: white;
+  font-weight: bold;
+}
+
+.label-email {
+  grid-area: label-email;
+  color: white;
+  font-weight: bold;
+}
+
+.label-message {
+  grid-area: label-msg;
+  color: white;
+  font-weight: bold;
+}
+
+.field-name {
+  grid-area: field-name;
+  width: 100%;
+}
+
+.field-email {
+  grid-area: field-email;
+  width: 100%;
+}
+
+.field-message {
+  grid-area: field-msg;
+  width: 100%;
+}
+
+.button {
+  grid-area: button;
+}
+
+.field {
+  border: 1px solid rgb(101, 153, 238);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+@media (max-width: 30px) {
+  .label-email {
+    margin-top: 20px;
+  }
+}
+.label-message {
+  margin-top: 20px;
+}
+
+.button {
+  appearance: none;
+  color: white;
+  font-weight: bold;
+  background-color: #0137a3;
+  border-radius: 0.2rem 0.4rem;
+  border: none;
+  font-size: 0.94rem;
+  margin-top: 20px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.bodyproduct {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.bodyproduct img {
+  max-width: 100%;
+}
+
+article.card {
+  max-width: 350px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+}
+
+.header-card img {
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card {
+  margin-top: 1rem;
+}
+.categoria-card span {
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.categoria-card .fruta {
+  background-color: red;
+}
+.categoria-card .listos {
+  background-color: rgb(255, 153, 0);
+}
+.categoria-card .carnes {
+  background-color: rgb(221, 128, 144);
+}
+.categoria-card .verduras {
+  background-color: rgb(114, 191, 83);
+}
+.categoria-card .trabajando {
+  background-color: gray;
+}
+.categoria-card .almacen {
+  background-color: rgb(207, 127, 7);
+}
+
+.filtros {
+  align-items: center;
+  padding-left: 10px;
+}
+.filtros .boton {
+  background-color: #3b3b3b;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.filterList ul {
+  display: flex;
+}
+.filterList ul .botonFrutas {
+  background-color: red;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.filterList ul .botonListos {
+  background-color: rgb(255, 153, 0);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.filterList ul .botonCarnes {
+  background-color: rgb(221, 128, 144);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.filterList ul .botonAlmacen {
+  background-color: rgb(207, 127, 7);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.filterList ul .botonVerduras {
+  background-color: rgb(114, 191, 83);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.filterList li {
+  padding-right: 10px;
+  display: block;
+}
+.filterList a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card footer {
+  padding: 0 1rem;
+}
+
+.perfil-card {
+  display: flex;
+  align-items: center;
+}
+
+.img-perfil-card {
+  display: flex;
+}
+.img-perfil-card img {
+  width: 35px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+}
+
+.text-perfil-card {
+  display: flex;
+  flex-flow: column;
+}
+.text-perfil-card span:nth-child(1) {
+  color: #575757;
+}
+
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.formulario {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+
+.formImg {
+  width: 60px;
+  height: 60px;
+}
+
+.mainNosotros {
+  background-color: #c8dbf4;
+}
+.mainNosotros div {
+  justify-content: center;
+}
+
+.breadcrumb {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.mainContacto {
+  background-color: #dfdfdf;
+}
+.mainContacto .contacto-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mainContacto .header-card-contacto img {
+  border-radius: 8px 8px 0 0;
+  max-height: 400px;
+  height: 100%;
+  width: 100%;
+}
+.mainContacto article.contacto {
+  max-width: 350px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+}
+.mainContacto .contacto-perfil-card {
+  display: flex;
+  flex-flow: column;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: large;
+}
+.mainContacto .contacto-perfil-card h5 {
+  padding-top: 10px;
+}
+.mainContacto .contacto-perfil-card span:nth-child(1) {
+  color: #575757;
+}
+
+.mainInicio {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.mainInicio h1 {
+  font-weight: bold;
+  padding: 15px;
+}
+
+.suscribe {
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(55%, #300fa9), to(#0c1a51));
+  background: -webkit-linear-gradient(left, #0f5ca9 55%, #0c1a51);
+  background: linear-gradient(90deg, #0f83a9 55%, #0c1a51);
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
