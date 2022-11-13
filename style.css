@@ -214,8 +214,13 @@ article.card {
   margin-left: 10px;
 }
 
+.filterList {
+  padding-left: 0px;
+  margin-left: 0px;
+}
 .filterList ul {
   display: flex;
+  padding-left: 0px;
 }
 .filterList ul .botonFrutas {
   background-color: red;

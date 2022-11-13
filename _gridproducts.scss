@@ -64,8 +64,12 @@ article.card {
 }
 
 .filterList {
+    padding-left: 0px;
+    margin-left: 0px;
+
     ul {
         display: flex;
+        padding-left: 0px;
 
         .botonFrutas {
             background-color: $frutas;
