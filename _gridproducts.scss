@@ -64,9 +64,6 @@ article.card {
 }
 
 .filterList {
-    padding-left: 0px;
-    margin-left: 0px;
-
     ul {
         display: flex;
         padding-left: 0px;
@@ -151,5 +148,6 @@ article.card {
 .card-wrap {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
 }
 

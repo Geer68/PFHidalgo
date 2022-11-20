@@ -5,7 +5,7 @@
     background: #111;
     height: auto;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
     color: #fff;
 }
 .footerContent {
@@ -33,8 +33,8 @@
 .footer-bottom {
     background: #000;
     width: 100%;
-    padding: 20px;
-    padding-bottom: 60px;
+    padding: 10px;
+    padding-bottom: 30px;
     text-align: center;
 
     p {
@@ -57,20 +57,18 @@
     }
 }
 
-.footer-menu {
-    float: right;
-
+.footerMenu {
+    justify-content: center;
+    display: flex;
+    width: 100%;
     ul {
         display: flex;
-
         li {
             padding-right: 10px;
             display: block;
-
             a {
                 color: #cfd2d6;
                 text-decoration: none;
-
                 &:hover {
                     color: #27bcda;
                 }
