@@ -8,20 +8,22 @@
     bottom: 30px;
     right: 30px;
 }
+
 .formImg {
     width: 60px;
     height: 60px;
     border: none;
-    box-shadow: 0 0 0 0 rgba(0,57,173,0.7);
+    box-shadow: 0 0 0 0 rgba(0, 57, 173, 0.7);
     border-radius: 50%;
     background-color: #0039ad;
     cursor: pointer;
     animation: pulse 1.25s infinite;
-    
+
     &:hover {
         animation: none;
     }
 }
+
 @keyframes pulse {
     to {
         box-shadow: 0 0 0 45px rgba(232, 76, 61, 0)
@@ -42,22 +44,25 @@
     padding-left: 30px;
     padding-top: 15px;
 }
+
 //CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 .mainContacto {
     background-color: #dfdfdf;
-    
+
     .contacto-wrap {
         display: flex;
         flex-flow: wrap;
         justify-content: center;
         align-items: center;
     }
+
     .header-card-contacto img {
         border-radius: 8px 8px 0 0;
         max-height: 400px;
         height: 100%;
         width: 100%;
     }
+
     article.contacto {
         max-width: 350px;
         background-color: #f8f8f8;
@@ -72,10 +77,11 @@
         padding-left: 20px;
         padding-bottom: 10px;
         font-size: large;
-        
+
         h5 {
             padding-top: 10px;
         }
+
         span:nth-child(1) {
             color: #575757;
         }
@@ -83,7 +89,7 @@
 }
 
 //INICIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-.mainInicio { 
+.mainInicio {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -101,11 +107,12 @@
         padding-top: 5px;
     }
 }
+
 .suscribe {
     align-items: center;
-    background: -webkit-gradient(linear,left top,right top,color-stop(55%,#300fa9),to(#0c1a51));
-    background: -webkit-linear-gradient(left,#0f5ca9 55%,#0c1a51);
-    background: linear-gradient(90deg,#0f83a9 55%,#0c1a51);
+    background: -webkit-gradient(linear, left top, right top, color-stop(55%, #300fa9), to(#0c1a51));
+    background: -webkit-linear-gradient(left, #0f5ca9 55%, #0c1a51);
+    background: linear-gradient(90deg, #0f83a9 55%, #0c1a51);
     color: #fff;
     display: -webkit-flex;
     display: flex;
@@ -116,56 +123,61 @@
 
 
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255, 255, 255, 0.822) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.822) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 $animationSpeed: 40s;
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7))
+    }
 }
 
 .slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 150px;
-	margin: 0px;
-	overflow:hidden;
-	position: relative;
-	width: 100%;
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 150px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
     padding-bottom: 10px;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 150px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 150px;
-		width: 150px;
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 150px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slide {
+        height: 150px;
+        width: 150px;
         margin-left: 15px;
-	}
+    }
 }

@@ -16,12 +16,14 @@
   flex-direction: column;
   text-align: center;
 }
+
 .footerContent h3 {
   font-size: 2.1rem;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
 }
+
 .footerContent p {
   max-width: 500px;
   margin: 10px auto;
@@ -37,17 +39,20 @@
   padding-bottom: 30px;
   text-align: center;
 }
+
 .footer-bottom p {
   float: left;
   font-size: 14px;
   word-spacing: 1.5px;
   text-transform: capitalize;
 }
+
 .footer-bottom p a {
   color: #44bae8;
   font-size: 16px;
   text-transform: capitalize;
 }
+
 .footer-bottom span {
   text-transform: uppercase;
   opacity: 0.4;
@@ -59,17 +64,21 @@
   display: flex;
   width: 100%;
 }
+
 .footerMenu ul {
   display: flex;
 }
+
 .footerMenu ul li {
   padding-right: 10px;
   display: block;
 }
+
 .footerMenu ul li a {
   color: #cfd2d6;
   text-decoration: none;
 }
+
 .footerMenu ul li a:hover {
   color: #27bcda;
 }
@@ -89,6 +98,7 @@
     grid-template-areas: "label-name label-email" "field-name field-email" "label-msg  ." "field-msg  field-msg" "button     .";
   }
 }
+
 .label-name {
   grid-area: label-name;
   color: white;
@@ -138,6 +148,7 @@
     margin-top: 20px;
   }
 }
+
 .label-message {
   margin-top: 20px;
 }
@@ -158,6 +169,7 @@
 .bodyproduct {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 .bodyproduct img {
   max-width: 100%;
 }
@@ -180,26 +192,33 @@ article.card {
 .categoria-card {
   margin-top: 1rem;
 }
+
 .categoria-card span {
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 }
+
 .categoria-card .fruta {
   background-color: red;
 }
+
 .categoria-card .listos {
   background-color: rgb(255, 153, 0);
 }
+
 .categoria-card .carnes {
   background-color: rgb(221, 128, 144);
 }
+
 .categoria-card .verduras {
   background-color: rgb(114, 191, 83);
 }
+
 .categoria-card .trabajando {
   background-color: gray;
 }
+
 .categoria-card .almacen {
   background-color: rgb(207, 127, 7);
 }
@@ -208,6 +227,7 @@ article.card {
   align-items: center;
   padding-left: 10px;
 }
+
 .filtros .boton {
   background-color: #3b3b3b;
   color: white;
@@ -220,6 +240,7 @@ article.card {
   display: flex;
   padding-left: 0px;
 }
+
 .filterList ul .botonFrutas {
   background-color: red;
   color: white;
@@ -227,6 +248,7 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
+
 .filterList ul .botonListos {
   background-color: rgb(255, 153, 0);
   color: white;
@@ -234,6 +256,7 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
+
 .filterList ul .botonCarnes {
   background-color: rgb(221, 128, 144);
   color: white;
@@ -241,6 +264,7 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
+
 .filterList ul .botonAlmacen {
   background-color: rgb(207, 127, 7);
   color: white;
@@ -248,6 +272,7 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
+
 .filterList ul .botonVerduras {
   background-color: rgb(114, 191, 83);
   color: white;
@@ -255,10 +280,12 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
+
 .filterList li {
   padding-right: 10px;
   display: block;
 }
+
 .filterList a {
   color: #fff;
   text-decoration: none;
@@ -276,6 +303,7 @@ article.card {
 .img-perfil-card {
   display: flex;
 }
+
 .img-perfil-card img {
   width: 35px;
   margin: 1rem 1rem 1rem 0;
@@ -286,6 +314,7 @@ article.card {
   display: flex;
   flex-flow: column;
 }
+
 .text-perfil-card span:nth-child(1) {
   color: #575757;
 }
@@ -314,6 +343,7 @@ article.card {
   cursor: pointer;
   animation: pulse 1.25s infinite;
 }
+
 .formImg:hover {
   animation: none;
 }
@@ -323,9 +353,11 @@ article.card {
     box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
   }
 }
+
 .mainNosotros {
   background-color: #c8dbf4;
 }
+
 .mainNosotros div {
   justify-content: center;
 }
@@ -338,18 +370,21 @@ article.card {
 .mainContacto {
   background-color: #dfdfdf;
 }
+
 .mainContacto .contacto-wrap {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
 }
+
 .mainContacto .header-card-contacto img {
   border-radius: 8px 8px 0 0;
   max-height: 400px;
   height: 100%;
   width: 100%;
 }
+
 .mainContacto article.contacto {
   max-width: 350px;
   background-color: #f8f8f8;
@@ -357,6 +392,7 @@ article.card {
   margin: 1rem;
   box-shadow: 0 0 12px #d7d7d7;
 }
+
 .mainContacto .contacto-perfil-card {
   display: flex;
   flex-flow: column;
@@ -364,9 +400,11 @@ article.card {
   padding-bottom: 10px;
   font-size: large;
 }
+
 .mainContacto .contacto-perfil-card h5 {
   padding-top: 10px;
 }
+
 .mainContacto .contacto-perfil-card span:nth-child(1) {
   color: #575757;
 }
@@ -378,10 +416,12 @@ article.card {
   align-items: center;
   padding-bottom: 15px;
 }
+
 .mainInicio h1 {
   font-weight: bold;
   padding: 15px;
 }
+
 .mainInicio h2 {
   font-weight: bold;
   padding-bottom: 5px;
@@ -405,10 +445,12 @@ article.card {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-1750px);
   }
 }
+
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -419,7 +461,9 @@ article.card {
   width: 100%;
   padding-bottom: 10px;
 }
-.slider::before, .slider::after {
+
+.slider::before,
+.slider::after {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.822) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 150px;
@@ -427,20 +471,24 @@ article.card {
   width: 200px;
   z-index: 2;
 }
+
 .slider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
+
 .slider::before {
   left: 0;
   top: 0;
 }
+
 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
   width: 3500px;
 }
+
 .slider .slide {
   height: 150px;
   width: 150px;

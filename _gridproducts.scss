@@ -1,4 +1,3 @@
-
 $frutas: red;
 $listos: rgb(255, 153, 0);
 $carnes: rgb(221, 128, 144);
@@ -7,10 +6,12 @@ $almacen: rgb(207, 127, 7);
 
 .bodyproduct {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     img {
         max-width: 100%;
-    }   
+    }
 }
+
 article.card {
     max-width: 350px;
     background-color: #f8f8f8;
@@ -18,34 +19,43 @@ article.card {
     margin: 1rem;
     box-shadow: 0 0 12px #d7d7d7;
 }
+
 .header-card img {
     border-radius: 8px 8px 0 0;
     max-height: 200px;
     height: 200px;
     width: 100%;
 }
+
 .categoria-card {
     margin-top: 1rem;
+
     span {
-        color:white;
+        color: white;
         padding: .2rem .5rem;
         border-radius: 4px;
     }
+
     .fruta {
         background-color: $frutas;
     }
+
     .listos {
         background-color: $listos;
     }
+
     .carnes {
         background-color: $carnes;
     }
+
     .verduras {
         background-color: $verduras;
     }
+
     .trabajando {
         background-color: gray;
     }
+
     .almacen {
         background-color: $almacen;
     }
@@ -54,9 +64,10 @@ article.card {
 .filtros {
     align-items: center;
     padding-left: 10px;
+
     .boton {
-        background-color:#3b3b3b;
-        color:white;
+        background-color: #3b3b3b;
+        color: white;
         padding: .2rem .5rem;
         border-radius: 4px;
         margin-left: 10px;
@@ -70,49 +81,54 @@ article.card {
 
         .botonFrutas {
             background-color: $frutas;
-            color:white;
+            color: white;
             padding: .2rem .5rem;
             border-radius: 4px;
             margin-left: 10px;
         }
+
         .botonListos {
             background-color: $listos;
-            color:white;
+            color: white;
             padding: .2rem .5rem;
             border-radius: 4px;
             margin-left: 10px;
         }
+
         .botonCarnes {
             background-color: $carnes;
-            color:white;
+            color: white;
             padding: .2rem .5rem;
             border-radius: 4px;
             margin-left: 10px;
         }
+
         .botonAlmacen {
             background-color: $almacen;
-            color:white;
+            color: white;
             padding: .2rem .5rem;
             border-radius: 4px;
             margin-left: 10px;
         }
+
         .botonVerduras {
             background-color: $verduras;
-            color:white;
+            color: white;
             padding: .2rem .5rem;
             border-radius: 4px;
             margin-left: 10px;
         }
     }
 
-        li {
-            padding-right: 10px;
-            display: block;
-        }
-            a {
-                color: #fff;
-                text-decoration: none;
-            }
+    li {
+        padding-right: 10px;
+        display: block;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 
@@ -128,7 +144,7 @@ article.card {
 
 .img-perfil-card {
     display: flex;
-    
+
     img {
         width: 35px;
         margin: 1rem 1rem 1rem 0;
@@ -150,4 +166,3 @@ article.card {
     flex-flow: wrap;
     justify-content: center;
 }
-

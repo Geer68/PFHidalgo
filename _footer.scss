@@ -8,6 +8,7 @@
     padding-top: 20px;
     color: #fff;
 }
+
 .footerContent {
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@
         text-transform: capitalize;
         line-height: 3rem;
     }
-    
+
     p {
         max-width: 500px;
         margin: 10px auto;
@@ -30,6 +31,7 @@
         color: #cacdd2;
     }
 }
+
 .footer-bottom {
     background: #000;
     width: 100%;
@@ -61,14 +63,18 @@
     justify-content: center;
     display: flex;
     width: 100%;
+
     ul {
         display: flex;
+
         li {
             padding-right: 10px;
             display: block;
+
             a {
                 color: #cfd2d6;
                 text-decoration: none;
+
                 &:hover {
                     color: #27bcda;
                 }

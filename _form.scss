@@ -10,12 +10,12 @@
 @media (min-width: 400px) {
     .form {
         grid-column-gap: 25px;
-        grid-template-areas: 
-        "label-name label-email"
-        "field-name field-email"
-        "label-msg  ."
-        "field-msg  field-msg"
-        "button     .";
+        grid-template-areas:
+            "label-name label-email"
+            "field-name field-email"
+            "label-msg  ."
+            "field-msg  field-msg"
+            "button     .";
     }
 }
 
@@ -24,28 +24,34 @@
     color: white;
     font-weight: bold;
 }
+
 .label-email {
     grid-area: label-email;
     color: white;
     font-weight: bold;
 }
+
 .label-message {
     grid-area: label-msg;
     color: white;
     font-weight: bold;
 }
+
 .field-name {
     grid-area: field-name;
     width: 100%;
 }
+
 .field-email {
     grid-area: field-email;
     width: 100%;
 }
+
 .field-message {
     grid-area: field-msg;
     width: 100%;
 }
+
 .button {
     grid-area: button;
 }
