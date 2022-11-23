@@ -43,35 +43,49 @@
       </div>
     </div>
   </nav>
-  
+
   <main class="bodyproduct">
 
-    <div class="filtros">
-      <h2>Filtrar por</h2>
-      <div class="filterList">
-        <ul>
-          <li class="botonFrutas"><a href="productos/frutas.html">Frutas</a></li>
-          <li class="botonListos"><a href="productos/listos.html">Listos</a></li>
-          <li class="botonCarnes"><a href="productos/carnes.html">Carnes</a></li>
-          <li class="botonAlmacen"><a href="productos/almacen.html">Almacen</a></li>
-          <li class="botonVerduras"><a href="productos/verduras.html">Verduras</a></li>
-          <!-- LOGRAR DESLIZABLE PARA LA ENTREGA FINAL -->
-        </ul>
+    <div class="gradientProducts">
+      <div>
+        <h1>Los mejores productos</h1>
       </div>
     </div>
+
+    <div class="filtros">
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+            style="background-color: #3570be;">
+            Filtrar por
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="productos/almacen.html">Almacen</a></li>
+            <li><a class="dropdown-item" href="productos/carnes.html">Carnes</a></li>
+            <li><a class="dropdown-item" href="productos/frutas.html">Frutas</a></li>
+            <li><a class="dropdown-item" href="productos/listos.html">Listos</a></li>
+            <li><a class="dropdown-item" href="productos/verduras.html
+              ">Verduras</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="card-wrap">
 
       <article class="card">
         <header class="header-card">
-          <img src="img/salmon.jpg" alt="salmon">
+          <img src="img/salmon.jpg" alt="frutillas">
         </header>
         <footer class="footer-card">
           <div class="categoria-card">
             <span class="carnes">Carnes</span>
           </div>
           <div class="texto-card">
-            <h3 class="frutas">Salmon</h3>
-            <p>Salmon fresco argentino</p>
+            <h3>Salmon</h3>
+            <p>Salmon fresco</p>
+            <p>$1600 kg</p>
           </div>
           <div class="perfil-card">
             <div class="img-perfil-card">
@@ -80,6 +94,9 @@
             <div class="text-perfil-card">
               <span>Mar del Sur</span>
             </div>
+          </div>
+          <div class="botonCompra">
+            <button type="button" class="btn btn-secondary" disabled style="background: rgb(80, 90, 130) ;">Comprar</button>
           </div>
         </footer>
       </article>
@@ -95,6 +112,7 @@
           <div class="texto-card">
             <h3>Frutillas</h3>
             <p>Deliciosas frutillas</p>
+            <p>$1600 kg</p>
           </div>
           <div class="perfil-card">
             <div class="img-perfil-card">
@@ -104,7 +122,9 @@
               <span>Sabrostar</span>
             </div>
           </div>
-
+          <div class="botonCompra">
+            <button type="button" class="btn btn-secondary" disabled style="background: rgb(80, 90, 130) ;">Comprar</button>
+          </div>
         </footer>
       </article>
 
@@ -127,6 +147,9 @@
             <div class="text-perfil-card">
               <span>Grido</span>
             </div>
+          </div>
+          <div class="botonCompra">
+            <button type="button" class="btn btn-secondary" disabled style="background: rgb(80, 90, 130) ;">Comprar</button>
           </div>
         </footer>
       </article>
@@ -151,7 +174,9 @@
               <span>Sabrostar</span>
             </div>
           </div>
-
+          <div class="botonCompra">
+            <button type="button" class="btn btn-secondary" disabled style="background: rgb(80, 90, 130) ;">Comprar</button>
+          </div>
         </footer>
       </article>
 
@@ -174,6 +199,9 @@
             <div class="text-perfil-card">
               <span>Maxfruit</span>
             </div>
+          </div>
+          <div class="botonCompra">
+            <button type="button" class="btn btn-secondary" disabled style="background: rgb(80, 90, 130) ;">Comprar</button>
           </div>
         </footer>
       </article>
@@ -198,6 +226,9 @@
             <div class="text-perfil-card">
               <span>Marolio</span>
             </div>
+          </div>
+          <div class="botonCompra">
+            <button type="button" class="btn btn-secondary" disabled style="background: rgb(80, 90, 130) ;">Comprar</button>
           </div>
         </footer>
       </article>
@@ -251,6 +282,11 @@
 
 
   </main>
+  <div>
+    <a class="carrito" href="productos.html">
+      <img class="carritoImg" src="img/carrito.png">
+    </a>
+  </div>
 
   <div>
     <a class="formulario" href="contacto.html">

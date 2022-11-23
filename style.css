@@ -16,14 +16,12 @@
   flex-direction: column;
   text-align: center;
 }
-
 .footerContent h3 {
   font-size: 2.1rem;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
 }
-
 .footerContent p {
   max-width: 500px;
   margin: 10px auto;
@@ -39,20 +37,17 @@
   padding-bottom: 30px;
   text-align: center;
 }
-
 .footer-bottom p {
   float: left;
   font-size: 14px;
   word-spacing: 1.5px;
   text-transform: capitalize;
 }
-
 .footer-bottom p a {
   color: #44bae8;
   font-size: 16px;
   text-transform: capitalize;
 }
-
 .footer-bottom span {
   text-transform: uppercase;
   opacity: 0.4;
@@ -64,21 +59,17 @@
   display: flex;
   width: 100%;
 }
-
 .footerMenu ul {
   display: flex;
 }
-
 .footerMenu ul li {
   padding-right: 10px;
   display: block;
 }
-
 .footerMenu ul li a {
   color: #cfd2d6;
   text-decoration: none;
 }
-
 .footerMenu ul li a:hover {
   color: #27bcda;
 }
@@ -92,13 +83,18 @@
   padding: 25px;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
+  .form {
+    grid-column-gap: 25px;
+    grid-template-areas: "label-name label-name" "field-name field-name" "label-email label-email" "field-email field-email" "label-msg  label-msg" "field-msg  field-msg" "button     button";
+  }
+}
+@media (min-width: 401px) {
   .form {
     grid-column-gap: 25px;
     grid-template-areas: "label-name label-email" "field-name field-email" "label-msg  ." "field-msg  field-msg" "button     .";
   }
 }
-
 .label-name {
   grid-area: label-name;
   color: white;
@@ -148,7 +144,6 @@
     margin-top: 20px;
   }
 }
-
 .label-message {
   margin-top: 20px;
 }
@@ -169,17 +164,47 @@
 .bodyproduct {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 .bodyproduct img {
   max-width: 100%;
 }
 
 article.card {
+  display: block;
+  top: 0px;
+  position: relative;
   max-width: 350px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
+  background-color: #f2f4f9;
+  border-radius: 6px;
+  padding: 15px 10px;
   margin: 1rem;
-  box-shadow: 0 0 12px #d7d7d7;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+}
+article.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+article.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #3570be;
+  height: 20px;
+  width: 20px;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+article.card:hover:before {
+  transform: scale(2.15);
 }
 
 .header-card img {
@@ -192,55 +217,43 @@ article.card {
 .categoria-card {
   margin-top: 1rem;
 }
-
 .categoria-card span {
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 }
-
 .categoria-card .fruta {
   background-color: red;
 }
-
 .categoria-card .listos {
   background-color: rgb(255, 153, 0);
 }
-
 .categoria-card .carnes {
   background-color: rgb(221, 128, 144);
 }
-
 .categoria-card .verduras {
   background-color: rgb(114, 191, 83);
 }
-
 .categoria-card .trabajando {
   background-color: gray;
 }
-
 .categoria-card .almacen {
   background-color: rgb(207, 127, 7);
 }
 
 .filtros {
-  align-items: center;
+  margin-top: 15px;
   padding-left: 10px;
+  display: flex;
 }
-
-.filtros .boton {
-  background-color: #3b3b3b;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-left: 10px;
+.filtros h2 {
+  margin-right: 15px;
 }
 
 .filterList ul {
   display: flex;
   padding-left: 0px;
 }
-
 .filterList ul .botonFrutas {
   background-color: red;
   color: white;
@@ -248,7 +261,6 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
-
 .filterList ul .botonListos {
   background-color: rgb(255, 153, 0);
   color: white;
@@ -256,7 +268,6 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
-
 .filterList ul .botonCarnes {
   background-color: rgb(221, 128, 144);
   color: white;
@@ -264,7 +275,6 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
-
 .filterList ul .botonAlmacen {
   background-color: rgb(207, 127, 7);
   color: white;
@@ -272,7 +282,6 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
-
 .filterList ul .botonVerduras {
   background-color: rgb(114, 191, 83);
   color: white;
@@ -280,12 +289,10 @@ article.card {
   border-radius: 4px;
   margin-left: 10px;
 }
-
 .filterList li {
   padding-right: 10px;
   display: block;
 }
-
 .filterList a {
   color: #fff;
   text-decoration: none;
@@ -293,6 +300,9 @@ article.card {
 
 .card footer {
   padding: 0 1rem;
+}
+.card footer .texto-card {
+  min-height: 120px;
 }
 
 .perfil-card {
@@ -303,7 +313,6 @@ article.card {
 .img-perfil-card {
   display: flex;
 }
-
 .img-perfil-card img {
   width: 35px;
   margin: 1rem 1rem 1rem 0;
@@ -314,7 +323,6 @@ article.card {
   display: flex;
   flex-flow: column;
 }
-
 .text-perfil-card span:nth-child(1) {
   color: #575757;
 }
@@ -325,11 +333,79 @@ article.card {
   justify-content: center;
 }
 
+.botonCompra {
+  padding-bottom: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.gradientProducts {
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(55%, #300fa9), to(#0c1a51));
+  background: -webkit-linear-gradient(left, #3570be 55%, #0c1a51);
+  background: linear-gradient(90deg, #3570be 55%, #0c1a51);
+  color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: center;
+  padding: 16px;
+  margin-top: 15px;
+}
+
+.carrito {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom: 100px;
+  right: 30px;
+}
+
+.carritoImg {
+  width: 60px;
+  height: 60px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  animation: pulse 3s infinite;
+}
+.carritoImg:hover {
+  animation: none;
+}
+
+@media (max-width: 321px) {
+  article.card {
+    max-width: 150px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .header-card img {
+    height: 150px;
+  }
+  .card footer {
+    padding: 0 10px;
+  }
+  .card footer .perfil-card {
+    display: none;
+  }
+  .formulario {
+    display: none;
+  }
+  .carrito {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    right: 30px;
+  }
+}
 .formulario {
   position: fixed;
   justify-content: center;
   align-items: center;
-  bottom: 30px;
+  bottom: 15px;
   right: 30px;
 }
 
@@ -338,26 +414,23 @@ article.card {
   height: 60px;
   border: none;
   box-shadow: 0 0 0 0 rgba(0, 57, 173, 0.7);
-  border-radius: 50%;
+  border-radius: 30%;
   background-color: #0039ad;
   cursor: pointer;
-  animation: pulse 1.25s infinite;
+  animation: pulse 3s infinite;
 }
-
 .formImg:hover {
   animation: none;
 }
 
 @keyframes pulse {
   to {
-    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);
   }
 }
-
 .mainNosotros {
   background-color: #c8dbf4;
 }
-
 .mainNosotros div {
   justify-content: center;
 }
@@ -369,22 +442,20 @@ article.card {
 
 .mainContacto {
   background-color: #dfdfdf;
+  justify-items: center;
 }
-
 .mainContacto .contacto-wrap {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
 }
-
 .mainContacto .header-card-contacto img {
   border-radius: 8px 8px 0 0;
   max-height: 400px;
   height: 100%;
   width: 100%;
 }
-
 .mainContacto article.contacto {
   max-width: 350px;
   background-color: #f8f8f8;
@@ -392,7 +463,6 @@ article.card {
   margin: 1rem;
   box-shadow: 0 0 12px #d7d7d7;
 }
-
 .mainContacto .contacto-perfil-card {
   display: flex;
   flex-flow: column;
@@ -400,11 +470,9 @@ article.card {
   padding-bottom: 10px;
   font-size: large;
 }
-
 .mainContacto .contacto-perfil-card h5 {
   padding-top: 10px;
 }
-
 .mainContacto .contacto-perfil-card span:nth-child(1) {
   color: #575757;
 }
@@ -416,12 +484,10 @@ article.card {
   align-items: center;
   padding-bottom: 15px;
 }
-
 .mainInicio h1 {
   font-weight: bold;
   padding: 15px;
 }
-
 .mainInicio h2 {
   font-weight: bold;
   padding-bottom: 5px;
@@ -445,12 +511,10 @@ article.card {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-1750px);
   }
 }
-
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -461,9 +525,7 @@ article.card {
   width: 100%;
   padding-bottom: 10px;
 }
-
-.slider::before,
-.slider::after {
+.slider::before, .slider::after {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.822) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 150px;
@@ -471,28 +533,28 @@ article.card {
   width: 200px;
   z-index: 2;
 }
-
 .slider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
-
 .slider::before {
   left: 0;
   top: 0;
 }
-
 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
   width: 3500px;
 }
-
 .slider .slide {
   height: 150px;
   width: 150px;
   margin-left: 15px;
+}
+
+.textoPages {
+  padding: 0 10px 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
