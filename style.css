@@ -161,9 +161,6 @@
   justify-items: center;
 }
 
-.bodyproduct {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
 .bodyproduct img {
   max-width: 100%;
 }
@@ -208,7 +205,7 @@ article.card:hover:before {
 }
 
 .header-card img {
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 8px 8px;
   max-height: 200px;
   height: 200px;
   width: 100%;
@@ -303,6 +300,16 @@ article.card:hover:before {
 }
 .card footer .texto-card {
   min-height: 120px;
+}
+.card footer .texto-card .actual {
+  font-weight: bold;
+  font-size: 20px;
+  color: #3570be;
+}
+.card footer .texto-card .rebaja {
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
 }
 
 .perfil-card {
@@ -431,7 +438,7 @@ article.card:hover:before {
 .mainNosotros {
   background-color: #c8dbf4;
 }
-.mainNosotros div {
+.mainNosotros .img-fluid div {
   justify-content: center;
 }
 
@@ -492,6 +499,52 @@ article.card:hover:before {
   font-weight: bold;
   padding-bottom: 5px;
   padding-top: 5px;
+}
+.mainInicio article.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+.mainInicio article.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+.mainInicio article.card:hover:before {
+  transform: scale(2.15);
+}
+.mainInicio .card footer {
+  padding: 0 1rem;
+}
+.mainInicio .card footer .texto-card {
+  min-height: 120px;
+  max-width: 165px;
+}
+.mainInicio .card footer .texto-card div {
+  display: flex;
+  align-items: center;
+}
+.mainInicio .card footer .texto-card div p {
+  padding-right: 10px;
+}
+.mainInicio .card footer .texto-card div .rebaja {
+  color: red;
+  font-size: 20px;
+}
+.mainInicio .card footer .texto-card div .actual {
+  color: gray;
+  text-decoration: line-through;
 }
 
 .suscribe {
