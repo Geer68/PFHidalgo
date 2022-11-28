@@ -32,15 +32,134 @@
 
 //NOSOTROSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 .mainNosotros {
-    background-color: #c8dbf4;
+    background-color: rgba(255, 228, 196, 0.763);
 
-    .img-fluid
+    .img-fluid{
+        max-width: 350px;
+    }
+    .imgInicios {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+    }
 
     div {
         justify-content: center;
     }
+
+    .suscribe{
+        margin-top: 15px;
+        align-items: center;
+        background: -webkit-gradient(linear, left top, right top, color-stop(55%, #a97d0f), to(#7c5e15));
+        background: -webkit-linear-gradient(left, #a97d0f(197, 168, 24) 55%, #7c5e15);
+        background: linear-gradient(90deg, #a97d0f 55%, #7c5e15);
+        color: #fff;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .textoPages {
+        font-size: large;
+    }
 }
 
+.inicios {
+    display: flex;
+    max-width: 90%;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 0.5rem;
+
+    img {
+        border-radius: 0.5rem 0 0 0.5rem;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .textInicios {
+        align-self: center;
+    }
+}
+.tuchoLunch {
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 0.5rem;
+
+    .contenidoTucho{
+        display: flex;
+    }
+
+    .textTucho {
+        align-self: center;
+    }
+
+    img {
+        border-radius: 0.5rem 0 0 0;
+    }
+
+    .perfil-card {
+        display: flex;
+
+        div {
+            display: flex;
+        }
+        .whatsapp {
+            margin-right: 20px;
+        }
+    }
+    
+}
+
+@media (max-width: 879px) {
+    .inicios {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border-radius: 0.5rem 0.5rem 0 0;
+            width: 100%;
+        }
+
+        .imgInicios {
+            width: 100%;
+            display: flex;
+        }
+    }
+    .contenidoTucho {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border-radius: 0.5rem 0.5rem 0 0;
+            width: 100%;
+        }
+
+        .imgInicios {
+            width: 100%;
+            display: flex;
+        }
+
+        .img-perfil-card img {
+            max-height: 30px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .perfil-card {
+            flex-direction: column;
+        }
+    }
+
+}
 //PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 .breadcrumb {
     padding-left: 30px;
@@ -241,4 +360,17 @@ $animationSpeed: 40s;
 
 .textoPages {
     padding: 0 10px 0 10px;
+}
+
+.location {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+    h2 {
+        margin-top: 10px;
+    }
 }
