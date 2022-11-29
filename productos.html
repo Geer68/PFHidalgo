@@ -19,7 +19,7 @@
 
   <nav class="navbar navbar-expand-lg" style="background-color: #3570be;">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color: #fff" href="index.html">L&M</a>
+      <a class="navbar-brand" style="color: #fff; font-weight: bold;" href="index.html">L&M</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,16 +27,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style="color: #fff" href="productos.html">Productos</a>
+            <a class="nav-link active" aria-current="page" style="color: #fff; font-weight: bold;" href="productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fff" href="index.html">Inicio</a>
-            <!-- CAMBIAR COLOR MAS OPACO PAGS INACTIVAS -->
+            <a class="nav-link" style="color: rgba(255, 255, 255, 0.686)" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fff" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" style="color: rgba(255, 255, 255, 0.686)" href="nosotros.html">Nosotros</a>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fff" href="contacto.html">Contacto</a>
+            <a class="nav-link" style="color: rgba(255, 255, 255, 0.686)" href="contacto.html">Contacto</a>
           </li>
           </li>
         </ul>
@@ -53,6 +52,7 @@
     </div>
 
     <div class="filtros">
+
       <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
         <div class="btn-group" role="group">
@@ -70,6 +70,27 @@
           </ul>
         </div>
       </div>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: red; margin-left: 20px">
+        Aviso
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Estamos en desarrollo</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Si el producto que desea no se encuentra en esta lista porfavor comunicarse por WhatsApp
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendí</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="card-wrap">
@@ -113,7 +134,7 @@
           </div>
           <div class="texto-card">
             <h3>Frutillas</h3>
-            <p>Deliciosas frutillas</p>
+            <p>Precio por kilo</p>
             <div class="precios">
               <p class="rebaja">$880/kg</p>
             </div>
@@ -171,9 +192,9 @@
           </div>
           <div class="texto-card">
             <h3 class="frutas">Arandanos</h3>
-            <p>Deliciosas frutillas</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="rebaja">$1000/kg</p>
+              <p class="rebaja">$999/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -259,9 +280,9 @@
           </div>
           <div class="texto-card">
             <h3>Patamuslo</h3>
-            <p>Muslo congelado</p>
+            <p>Patamuslo congelado</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$515/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -288,9 +309,9 @@
           </div>
           <div class="texto-card">
             <h3>Pollo entero</h3>
-            <p>Postre facil y rico</p>
+            <p>Pollo congelado 3Kg</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$1270</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -317,9 +338,9 @@
           </div>
           <div class="texto-card">
             <h3>Tira de asado</h3>
-            <p>Postre facil y rico</p>
+            <p>Tiras de asado xKg</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$1369/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -346,9 +367,9 @@
           </div>
           <div class="texto-card">
             <h3>Cerdo</h3>
-            <p>Costillas de cerdo</p>
+            <p>Costillas de cerdo xKg</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$980/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -375,9 +396,9 @@
           </div>
           <div class="texto-card">
             <h3>Merluza</h3>
-            <p>Postre facil y rico</p>
+            <p>Kg fresco</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$1200/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -404,9 +425,9 @@
           </div>
           <div class="texto-card">
             <h3>Peras</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$139/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -433,9 +454,9 @@
           </div>
           <div class="texto-card">
             <h3>Kiwi</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$1280/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -462,9 +483,9 @@
           </div>
           <div class="texto-card">
             <h3>Manzanas</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$489/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -491,9 +512,9 @@
           </div>
           <div class="texto-card">
             <h3>Bananas</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$350/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -520,9 +541,9 @@
           </div>
           <div class="texto-card">
             <h3>Zanahorias</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$180/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -549,9 +570,9 @@
           </div>
           <div class="texto-card">
             <h3>Lechuga</h3>
-            <p>Postre facil y rico</p>
+            <p>2 plantas de Lechuga</p>
             <div class="precios">
-              <p class="rebaja">$880/kg</p>
+              <p class="rebaja">$250</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -578,9 +599,9 @@
           </div>
           <div class="texto-card">
             <h3>Tomate</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$500/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -607,9 +628,9 @@
           </div>
           <div class="texto-card">
             <h3>Berenjenas</h3>
-            <p>Postre facil y rico</p>
+            <p>Precio por kilo</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$400/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -636,9 +657,9 @@
           </div>
           <div class="texto-card">
             <h3>Arroz</h3>
-            <p>Postre facil y rico</p>
+            <p>1kg arroz largo fino</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$200</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -665,9 +686,9 @@
           </div>
           <div class="texto-card">
             <h3>Coca Cola 3L</h3>
-            <p>Postre facil y rico</p>
+            <p>Sabor original</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$600</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -694,9 +715,9 @@
           </div>
           <div class="texto-card">
             <h3>Harina</h3>
-            <p>Postre facil y rico</p>
+            <p>1kg con leudante</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$240</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -723,9 +744,9 @@
           </div>
           <div class="texto-card">
             <h3>Avena</h3>
-            <p>Postre facil y rico</p>
+            <p>470g</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$430</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -752,9 +773,9 @@
           </div>
           <div class="texto-card">
             <h3>Empandas</h3>
-            <p>Postre facil y rico</p>
+            <p>De todas variedades x12</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$900</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -781,9 +802,9 @@
           </div>
           <div class="texto-card">
             <h3>Especial</h3>
-            <p>Postre facil y rico</p>
+            <p>Al horno y listo!</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$950</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -810,9 +831,9 @@
           </div>
           <div class="texto-card">
             <h3>Medialunas</h3>
-            <p>Postre facil y rico</p>
+            <p>Docena congelada</p>
             <div class="precios">
-              <p class="rebaja">$880/kg</p>
+              <p class="rebaja">$750</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -842,7 +863,7 @@
             <h3>Milanesas</h3>
             <p>Postre facil y rico</p>
             <div class="precios">
-              <p class="actual">$580/kg</p>
+              <p class="actual">$550/kg</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -870,9 +891,9 @@
           </div>
           <div class="texto-card">
             <h3>Medallas Soja</h3>
-            <p>Postre facil y rico</p>
+            <p>Medallones de soja x4</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$320</p>
             </div>
           </div>
           <div class="perfil-card">
@@ -899,9 +920,9 @@
           </div>
           <div class="texto-card">
             <h3>Salchichas</h3>
-            <p>Postre facil y rico</p>
+            <p>Paquete de 6</p>
             <div class="precios">
-              <p class="actual">$880/kg</p>
+              <p class="actual">$100</p>
             </div>
           </div>
           <div class="perfil-card">

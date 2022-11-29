@@ -77,7 +77,7 @@
 .form {
   display: grid;
   grid-row-gap: 5px;
-  background-color: rgb(101, 153, 238);
+  background-color: #35be5a;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 600px;
   padding: 25px;
@@ -133,10 +133,17 @@
 }
 
 .field {
-  border: 1px solid rgb(101, 153, 238);
+  border: 1px solid #35be5a;
   font-family: inherit;
   font-size: 1rem;
   padding: 10px;
+}
+
+.contForm {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 30px) {
@@ -152,7 +159,7 @@
   appearance: none;
   color: white;
   font-weight: bold;
-  background-color: #0137a3;
+  background-color: #237f3c;
   border-radius: 0.2rem 0.4rem;
   border: none;
   font-size: 0.94rem;
@@ -246,53 +253,8 @@ article.card:hover:before {
 .filtros h2 {
   margin-right: 15px;
 }
-
-.filterList ul {
-  display: flex;
-  padding-left: 0px;
-}
-.filterList ul .botonFrutas {
+.filtros .btn-primary {
   background-color: red;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-left: 10px;
-}
-.filterList ul .botonListos {
-  background-color: rgb(255, 153, 0);
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-left: 10px;
-}
-.filterList ul .botonCarnes {
-  background-color: rgb(221, 128, 144);
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-left: 10px;
-}
-.filterList ul .botonAlmacen {
-  background-color: rgb(207, 127, 7);
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-left: 10px;
-}
-.filterList ul .botonVerduras {
-  background-color: rgb(114, 191, 83);
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  margin-left: 10px;
-}
-.filterList li {
-  padding-right: 10px;
-  display: block;
-}
-.filterList a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .card footer {
@@ -552,8 +514,48 @@ article.card:hover:before {
 }
 
 .mainContacto {
-  background-color: #dfdfdf;
+  background-color: #ffffff;
   justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContacto .suscribe {
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(55%, #3acb60), to(#34b456));
+  background: -webkit-linear-gradient(left, #3acb60 55%, #34b456);
+  background: linear-gradient(90deg, #3acb60 55%, #34b456);
+  color: #fff;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 16px;
+  margin-top: 15px;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.mainContacto .horarios {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "diasL horasL" "diasN horasN";
+}
+.mainContacto .horarios .diasL {
+  grid-area: diasL;
+}
+.mainContacto .horarios .horasL {
+  grid-area: horasL;
+  color: #34b456;
+  padding-left: 15px;
+  font-size: xx-large;
+}
+.mainContacto .horarios .diasN {
+  grid-area: diasN;
+}
+.mainContacto .horarios .horasN {
+  grid-area: horasN;
+  color: #34b456;
+  padding-left: 15px;
+  font-size: xx-large;
 }
 .mainContacto .contacto-wrap {
   display: flex;
@@ -580,6 +582,7 @@ article.card:hover:before {
   padding-left: 20px;
   padding-bottom: 10px;
   font-size: large;
+  align-items: ce;
 }
 .mainContacto .contacto-perfil-card h5 {
   padding-top: 10px;

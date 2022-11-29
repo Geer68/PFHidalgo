@@ -101,65 +101,11 @@ article.card {
     h2 {
         margin-right: 15px;
     }
-}
 
-.filterList {
-    ul {
-        display: flex;
-        padding-left: 0px;
-
-        .botonFrutas {
-            background-color: $frutas;
-            color: white;
-            padding: .2rem .5rem;
-            border-radius: 4px;
-            margin-left: 10px;
-        }
-
-        .botonListos {
-            background-color: $listos;
-            color: white;
-            padding: .2rem .5rem;
-            border-radius: 4px;
-            margin-left: 10px;
-        }
-
-        .botonCarnes {
-            background-color: $carnes;
-            color: white;
-            padding: .2rem .5rem;
-            border-radius: 4px;
-            margin-left: 10px;
-        }
-
-        .botonAlmacen {
-            background-color: $almacen;
-            color: white;
-            padding: .2rem .5rem;
-            border-radius: 4px;
-            margin-left: 10px;
-        }
-
-        .botonVerduras {
-            background-color: $verduras;
-            color: white;
-            padding: .2rem .5rem;
-            border-radius: 4px;
-            margin-left: 10px;
-        }
-    }
-
-    li {
-        padding-right: 10px;
-        display: block;
-    }
-
-    a {
-        color: #fff;
-        text-decoration: none;
+    .btn-primary {
+        background-color: red;  
     }
 }
-
 
 
 .card footer {

@@ -168,8 +168,57 @@
 
 //CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 .mainContacto {
-    background-color: #dfdfdf;
+    background-color: #ffffff;
     justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .suscribe {
+        align-items: center;
+        background: -webkit-gradient(linear, left top, right top, color-stop(55%, #3acb60), to(#34b456));
+        background: -webkit-linear-gradient(left, #3acb60 55%, #34b456);
+        background: linear-gradient(90deg, #3acb60 55%, #34b456);
+        color: #fff;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        padding: 16px;
+        margin-top: 15px;
+        justify-content: center;
+        border-radius: 1rem;
+    }
+
+    .horarios {
+        display: grid;
+        align-items: center;
+        grid-template-areas: 
+        "diasL horasL"
+        "diasN horasN";
+
+        .diasL {
+            grid-area: diasL;
+        }
+
+        .horasL {
+            grid-area: horasL;
+            color: #34b456;
+            padding-left: 15px;
+            font-size: xx-large;
+        }
+
+        .diasN {
+            grid-area: diasN;
+        }
+
+        .horasN {
+            grid-area: horasN;
+            color: #34b456;
+            padding-left: 15px;
+            font-size: xx-large;    
+        }
+    }
+
 
     .contacto-wrap {
         display: flex;
@@ -199,6 +248,7 @@
         padding-left: 20px;
         padding-bottom: 10px;
         font-size: large;
+        align-items: ce;
 
         h5 {
             padding-top: 10px;

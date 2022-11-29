@@ -16,9 +16,9 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg" style="background-color: #3570be;">
+  <nav class="navbar navbar-expand-lg" style="background-color: #35be5a;">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color: #fff" href="index.html">L&M</a>
+      <a class="navbar-brand" style="color: #fff; font-weight: bold;" href="index.html">L&M</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,16 +26,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" style="color: #fff" href="contacto.html">Contacto</a>
+            <a class="nav-link active" aria-current="page" style="color: #fff; font-weight: bold;" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fff" href="index.html">Inicio</a>
+            <a class="nav-link" style="color: rgba(255, 255, 255, 0.686)" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fff" href="nosotros.html">Nosotros</a>
+            <a class="nav-link" style="color: rgba(255, 255, 255, 0.686)" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fff" href="productos.html">Productos</a>
+            <a class="nav-link" style="color: rgba(255, 255, 255, 0.686)" href="productos.html">Productos</a>
           </li>
         </ul>
       </div>
@@ -44,12 +44,17 @@
 
   <main class="mainContacto">
 
-    <img src="img/imgFormulario.jpg" class="card-img-top" alt="imgFormulario">
+    <div class="suscribe">
+      <div>
+        <h1>Horarios y medios de contacto</h1>
+      </div>
+    </div>
     
-    <h1>Medios de contacto</h1>
-
-    <div>
-      <img src="img/horarios.png" class="card-img-top" style="width: 100%; max-width: 700px;" alt="imgHorarios">
+    <div class="horarios">
+      <h2 class="diasL">Lunes-Viernes</h2>
+      <h4 class="horasL">10:00-20:00</h4>
+      <h2 class="diasN">Sabados-Domingos</h2>
+      <h4 class="horasN">09:00-13:00</h4>
     </div>
 
     <div class="contacto-wrap">
@@ -62,7 +67,7 @@
           <div class="perfil-card">
             <div class="contacto-perfil-card">
               <h5>WhatsApp</h5>
-              <span>2615108624</span>
+              <span>0358 420-0351</span>
             </div>
           </div>
         </footer>
@@ -76,27 +81,46 @@
           <div class="perfil-card">
             <div class="contacto-perfil-card">
               <h5>Instagram</h5>
-              <span>@geerhidalgo</span>
+              <span>@supercongelados_lym</span>
             </div>
           </div>
         </footer>
       </article>
 
-      <article>
-        <form class="form">
-          <label for="name" class="label-name">Nombre</label>
-          <input type="text" id="name" name="name" maxlength="40" class="field field-name" />
-
-          <label for="email" class="label-email">Email</label>
-          <input type="email" id="email" name="email" maxlength="40" class="field field-email" />
-
-          <label for="message" class="label-message">Mensaje</label>
-          <textarea id="message" name="message" cols="30" rows="5" maxlength="400"
-            class="field field-message"></textarea>
-
-          <input type="submit" value="Enviar" class="button" />
-        </form>
+      <article class="contacto">
+        <header class="header-card-contacto">
+          <img src="img/faceqr.png" alt="qr">
+        </header>
+        <footer class="numero-card">
+          <div class="perfil-card">
+            <div class="contacto-perfil-card">
+              <h5>Facebook</h5>
+              <span>supercongelados_mayorista</span>
+            </div>
+          </div>
+        </footer>
       </article>
+
+      <div class="contForm">
+        <h2>Suscribite</h2>
+        <p class="textoPages">Para suscribirte a nuestro servicio completá el formulario y nos pondremos en contacto con vos.</p>
+        <article>
+          <form class="form">
+            <label for="name" class="label-name">Nombre</label>
+            <input type="text" id="name" name="name" maxlength="40" class="field field-name" />
+  
+            <label for="email" class="label-email">Email</label>
+            <input type="email" id="email" name="email" maxlength="40" class="field field-email" />
+  
+            <label for="message" class="label-message">Mensaje</label>
+            <textarea id="message" name="message" cols="30" rows="5" maxlength="400"
+              class="field field-message"></textarea>
+  
+            <input type="submit" value="Enviar" class="button" />
+          </form>
+        </article>
+      </div>
+      
 
     </div>
 
