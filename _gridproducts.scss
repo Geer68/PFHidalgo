@@ -23,34 +23,34 @@ article.card {
     z-index: 0;
     overflow: hidden;
     border: 1px solid #f2f8f9;
-  
+
     &:hover {
-      transition: all 0.2s ease-out;
-      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-      top: -4px;
-      border: 1px solid #cccccc;
-      background-color: white;
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
     }
-  
+
     &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -16px;
-      right: -16px;
-      background: #3570be;
-      height: 20px;
-      width: 20px;
-      border-radius: 32px;
-      transform: scale(2);
-      transform-origin: 50% 50%;
-      transition: transform 0.15s ease-out;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -16px;
+        right: -16px;
+        background: #3570be;
+        height: 20px;
+        width: 20px;
+        border-radius: 32px;
+        transform: scale(2);
+        transform-origin: 50% 50%;
+        transition: transform 0.15s ease-out;
     }
-  
+
     &:hover:before {
-      transform: scale(2.15);
+        transform: scale(2.15);
     }
-  }
+}
 
 .header-card img {
     border-radius: 8px 8px 8px 8px;
@@ -103,7 +103,7 @@ article.card {
     }
 
     .btn-primary {
-        background-color: red;  
+        background-color: red;
     }
 }
 
@@ -204,23 +204,27 @@ article.card {
 
 @media (max-width: 321px) {
     article.card {
-    max-width: 150px;
-    margin: 5px;
-    padding: 5px;
+        max-width: 150px;
+        margin: 5px;
+        padding: 5px;
     }
+
     .header-card img {
         height: 150px;
     }
+
     .card footer {
         padding: 0 10px;
-        
+
         .perfil-card {
             display: none;
         }
     }
+
     .formulario {
         display: none;
     }
+
     .carrito {
         position: fixed;
         justify-content: center;
@@ -228,4 +232,4 @@ article.card {
         bottom: 15px;
         right: 30px;
     }
-  }
+}
